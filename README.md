@@ -5,7 +5,7 @@ Based on [Roderik's dotfiles](https://github.com/roderik/dotfiles) and [Matt's d
 
 ##Feature
 
-###Navigation
+###Navigation 
 <table width="100%">
   <tr>
     <th>Alias</th><th>Method</th><th>Description</th>
