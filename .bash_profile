@@ -32,6 +32,3 @@ if [ -f /usr/local/etc/bash_completion ]; then
   . /usr/local/etc/bash_completion
 fi
 
-if [ -f ~/.bashrc ]; then
-  source ~/.bashrc
-fi

@@ -36,22 +36,16 @@ if a.lower() == "y":
 a = raw_input('\nDo you want to install virtualenv (y/n)\n')
 
 if a.lower() == "y":
+	os.system("sudo apt-get install python-setuptools")
 	os.system("sudo easy_install pip")
-	os.system("pip install --upgrade distribute")
+	os.system("sudo pip install --upgrade distribute")
 	os.system("sudo pip install virtualenv")
-	os.system("pip install virtualenvwrapper")
+	os.system("sudo pip install virtualenvwrapper")
 
 a = raw_input('\nDo you want to create ~/Projects and ~/Work dirs? (y/n)\n')
 
 if a.lower() == "y":
 	os.system("mkdir ~/Work 2> /dev/null")
 	os.system("mkdir ~/Projects 2> /dev/null")
-
-a = raw_input("\nDo you want to download iterm2 Solarized Dark style? (y/n)\n")
-
-if a.lower() == "y":
-	os.system("wget 'https://raw.github.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors'")
-	os.system("open 'Solarized Dark.itermcolors'")
-	print "open iterm and set downloaded color sheme"
 
 print "reload your console"

@@ -9,8 +9,10 @@ alias -- -="cd -"
 alias cdd="cd ~/Downloads"
 alias cdp="cd ~/Projects"
 alias cdw="cd ~/Work"
-alias o="open"
-alias o.="open ."
+alias cdh="cd ~"
+
+alias apt="sudo apt-get install"
+
 
 # signal beep
 alias beep="tput bel"
