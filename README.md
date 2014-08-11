@@ -1,4 +1,5 @@
-#Peter's dotfiles
+#John's dotfiles
+Modification of [Peter's dotfiles](https://github.com/piotrgiedziun/dotfiles) which works on ubuntu.<br>
 This is a collection of dotfiles customised for my own usage.<br>
 Based on [Roderik's dotfiles](https://github.com/roderik/dotfiles) and [Matt's dotfiles](https://github.com/mattbanks/dotfiles)
 
@@ -8,15 +9,14 @@ Based on [Roderik's dotfiles](https://github.com/roderik/dotfiles) and [Matt's d
 <table width="100%">
   <tr>
     <th>Alias</th><th>Method</th><th>Description</th>
-  </tr>
-  	<tr>
-		<td> cdf</td><td>(fuction)</td><td> cd to path indicated by Finder.app instance</td>
-	 </tr><tr>
+  </tr><tr>
 		<td> ..</td><td>cd ..</td><td> cd up</td>
 	 </tr><tr>
 		<td> ...</td><td>cd ../..</td><td> cd 2 x up</td>
 	 </tr><tr>
 		<td> ~</td><td>cd ~</td><td> cd to home directory</td>
+	 </tr><tr>
+		<td> cdh</td><td>cd ~</td><td>cd to home directory </td>
 	 </tr><tr>
 		<td> -</td><td>cd -</td><td> cd to previously visted folder</td>
 	 </tr><tr>
@@ -27,15 +27,12 @@ Based on [Roderik's dotfiles](https://github.com/roderik/dotfiles) and [Matt's d
 		<td> cdw</td><td>cd ~/Work</td><td> </td>
 	 </tr>
 </table>
-###Opening files
+###Installing package
 <table width="100%">
   <tr>
    <th>Alias</th><th>Method</th><th>Description</th>
-  </tr>
-	 <tr>
-		<td> o</td><td>open</td><td> </td>
-	 </tr><tr>
-		<td> o.</td><td>open .</td><td> </td>
+  </tr><tr>
+	<td> apt</td><td>sudo apt-get install</td><td> </td>
 	 </tr>
 </table>
 ###Listing
@@ -120,16 +117,8 @@ Based on [Roderik's dotfiles](https://github.com/roderik/dotfiles) and [Matt's d
 * remove existing one - `rmvirtualenv [env_name]`
 * workon existing one - `workon [env_name]`
 
-##Prerequisites
-* **brew** - The missing package manager for OS X [[download]](http://mxcl.github.com/homebrew/)<br>
-`ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"`
-* **wget** - The non−interactive network downloader<br>
-`brew install wget`
-* **iTerm2** - 
-http://www.iterm2.com/downloads/beta/iTerm2-1_0_0_20130811.zip 
-
 ##Installation
 Open terminal and type
 ```bash
-git clone https://github.com/piotrgiedziun/dotfiles.git && cd dotfiles && ./install
+git clone https://github.com/johniak/dotfiles.git && cd dotfiles && ./install
 ```
