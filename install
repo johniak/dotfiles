@@ -20,6 +20,11 @@ if a.lower() == "y":
 	for file in bin_files:
 		os.system("cp .bin/%s ~/.bin" % (file,))
 
+a = raw_input('\nDo you want to install git completion? (y/n)\n')
+
+if a.lower() == "y":
+	os.system("curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash")
+
 a = raw_input('\nDo you want to create gitconfig file? (y/n)\n')
 
 if a.lower() == "y":
@@ -47,5 +52,5 @@ a = raw_input('\nDo you want to create ~/Projects and ~/Work dirs? (y/n)\n')
 if a.lower() == "y":
 	os.system("mkdir ~/Work 2> /dev/null")
 	os.system("mkdir ~/Projects 2> /dev/null")
-
+	
 print "reload your console"

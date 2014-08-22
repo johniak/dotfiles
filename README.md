@@ -81,10 +81,14 @@ Based on [Roderik's dotfiles](https://github.com/roderik/dotfiles) and [Matt's d
 <table width="100%">
   <tr>
     <th>Alias</th><th>Usage</th><th>Description</th>
-  </tr><tr>
+  </tr>
+	<tr>
+		<td> killp</td><td>killp 8080</td><td>kill all processes working on port 8080</td>
+	</tr>
+	<tr>
 		<td> mkd</td><td>mkd iLikePizza</td><td>make dir and cd to it</td>
-	 </tr><tr>
-<tr>
+	</tr>
+	<tr>
 		<td> copy</td><td>copy cat ~/.ssh/id_rsa.pub</td><td>copy given content to clipboard</td>
 	 </tr><tr>
 		<td> dataurl</td><td>dataurl image.png</td><td>return base64 of given object</td>
@@ -120,16 +124,31 @@ Based on [Roderik's dotfiles](https://github.com/roderik/dotfiles) and [Matt's d
 * remove existing one - `rmvirtualenv [env_name]`
 * workon existing one - `workon [env_name]`
 
+##SSH
+In order to have auto-complete option you have to add all yours hosts into `.ssh/config` file.
+
+Example `.ssh/config` file:
+```bash
+Host github
+	HostName github.com
+	User piotrgiedziun
+	IdentityFile ~/.ssh/id_rsa
+
+Host example.com
+	User foreveryoung
+	IdentityFile ~/.ssh/foreveryoung_rsa
+```
+
 ##Prerequisites
 * **brew** - The missing package manager for OS X [[download]](http://mxcl.github.com/homebrew/)<br>
 `ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"`
-* **wget** - The non−interactive network downloader<br>
-`brew install wget`
 * **iTerm2** - 
 http://www.iterm2.com/downloads/beta/iTerm2-1_0_0_20130811.zip 
 
 ##Installation
 Open terminal and type
 ```bash
-git clone https://github.com/piotrgiedziun/dotfiles.git && cd dotfiles && ./install
+git clone https://github.com/johniak/dotfiles.git && cd dotfiles && ./install
 ```
+
+
