@@ -14,4 +14,4 @@ if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
 else
     echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
-source .bash_profile
+source ~/.bash_profile
