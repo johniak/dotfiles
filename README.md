@@ -129,11 +129,11 @@ Example `.ssh/config` file:
 ```bash
 Host github
 	HostName github.com
-	User piotrgiedziun
+	User janromaniak
 	IdentityFile ~/.ssh/id_rsa
 
 Host example.com
-	User foreveryoung
+	User johniak
 	IdentityFile ~/.ssh/johniak_rsa
 ```
 
