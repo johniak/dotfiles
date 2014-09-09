@@ -13,6 +13,9 @@ alias cdh="cd ~"
 
 alias apt="sudo apt-get install"
 
+alias please='sudo $(fc -nl -1)' 
+alias pls='please'
+
 
 # signal beep
 alias beep="tput bel"
