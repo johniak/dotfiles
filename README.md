@@ -108,6 +108,10 @@ Based on [Roderik's dotfiles](https://github.com/roderik/dotfiles) and [Matt's d
 		<td> extract</td><td>extract file.zip</td><td> extract given file</td>
 	 </tr><tr>
 		<td> roll</td><td>roll file.zip file.png file.jpg</td><td> create zip/tar/tar.gz archive from listed files</td>
+	 </tr><tr>
+		<td> please</td><td><p>$ powertop</p> 
+				    <p>PowerTOP v2.5 must be run with root privileges.</p>
+				    <p>$ please</p> </td><td> run last command with sudo permissions</td>
 	 </tr>
 </table>
 
