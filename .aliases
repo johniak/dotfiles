@@ -13,7 +13,7 @@ alias cdh="cd ~"
 
 alias apt="sudo apt-get install"
 
-alias please='sudo $(fc -nl -1)' 
+alias please='sudo !!' 
 alias pls='please'
 
 
